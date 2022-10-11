@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealMonitoring", "HealMonitoring\HealMonitoring.csproj", "{1A839E16-B037-4F62-83BF-9F6632D4C2F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealMonitoring.DB", "HealMonitoring.DB\HealMonitoring.DB.csproj", "{9748E499-E51F-4275-8D2A-6B4A52B741B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A839E16-B037-4F62-83BF-9F6632D4C2F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A839E16-B037-4F62-83BF-9F6632D4C2F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A839E16-B037-4F62-83BF-9F6632D4C2F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A839E16-B037-4F62-83BF-9F6632D4C2F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9748E499-E51F-4275-8D2A-6B4A52B741B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9748E499-E51F-4275-8D2A-6B4A52B741B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9748E499-E51F-4275-8D2A-6B4A52B741B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9748E499-E51F-4275-8D2A-6B4A52B741B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {82AE79D4-85A5-4DD0-9AA4-DFBCE68850EB}
+	EndGlobalSection
+EndGlobal

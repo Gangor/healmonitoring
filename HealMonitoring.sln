@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealMonitoring", "HealMonitoring\HealMonitoring.csproj", "{1A839E16-B037-4F62-83BF-9F6632D4C2F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealMonitoring", "HealMonitoring\HealMonitoring.csproj", "{1A839E16-B037-4F62-83BF-9F6632D4C2F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealMonitoring.DB", "HealMonitoring.DB\HealMonitoring.DB.csproj", "{9748E499-E51F-4275-8D2A-6B4A52B741B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealMonitoring.DB", "HealMonitoring.DB\HealMonitoring.DB.csproj", "{9748E499-E51F-4275-8D2A-6B4A52B741B9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Github", "Github\Github.csproj", "{6F409E38-C7B6-4DEA-ACCC-220A238F837E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Datasource", "Datasource", "{6B0E4219-6B48-4E24-B9C8-6C8B2256FFAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saleforce", "Saleforce\Saleforce.csproj", "{BC3F5C82-ABEB-430F-9E4B-45C0C81E5465}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +27,21 @@ Global
 		{9748E499-E51F-4275-8D2A-6B4A52B741B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9748E499-E51F-4275-8D2A-6B4A52B741B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9748E499-E51F-4275-8D2A-6B4A52B741B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F409E38-C7B6-4DEA-ACCC-220A238F837E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F409E38-C7B6-4DEA-ACCC-220A238F837E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F409E38-C7B6-4DEA-ACCC-220A238F837E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F409E38-C7B6-4DEA-ACCC-220A238F837E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC3F5C82-ABEB-430F-9E4B-45C0C81E5465}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC3F5C82-ABEB-430F-9E4B-45C0C81E5465}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC3F5C82-ABEB-430F-9E4B-45C0C81E5465}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC3F5C82-ABEB-430F-9E4B-45C0C81E5465}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6F409E38-C7B6-4DEA-ACCC-220A238F837E} = {6B0E4219-6B48-4E24-B9C8-6C8B2256FFAE}
+		{BC3F5C82-ABEB-430F-9E4B-45C0C81E5465} = {6B0E4219-6B48-4E24-B9C8-6C8B2256FFAE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {82AE79D4-85A5-4DD0-9AA4-DFBCE68850EB}

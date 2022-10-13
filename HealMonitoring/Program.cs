@@ -1,25 +1,28 @@
-using HealMonitoring.DB;
-using Microsoft.EntityFrameworkCore;
+using HealMonitoring;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
-var builder = WebApplication.CreateBuilder(args);
-var app = builder.Build();
-
-// Load services
-
-builder.Services.AddEntityFrameworkMySql()
-    .AddDbContext<HealMonitoringContext>(options => 
-        options.UseMySql(app.Configuration.GetConnectionString("HealMonitoring"), new MySqlServerVersion(new Version(8, 0, 30))));
-
-try
+public class Program
 {
-	using (var serviceScope = app.Services.GetRequiredService<IServiceScopeFactory>()
-		.CreateScope())
-	{
-		serviceScope.ServiceProvider.GetService<HealMonitoringContext>()
-				.Database.Migrate();
-	}
+    public static void Main(string[] args)
+    {
+        CreateHostBuilder(args).Build().Run();
+    }
+
+    public static IHostBuilder CreateHostBuilder(string[] args) =>
+        Host.CreateDefaultBuilder(args)
+            .ConfigureLogging((hostingContext, logging) =>
+            {
+                logging.AddConfiguration(hostingContext.Configuration.GetSection("Logging"));
+            })
+            .ConfigureWebHostDefaults(webBuilder =>
+            {
+                webBuilder.UseStartup<Startup>();
+            });
 }
-catch { }
-
-
-app.Run();
